@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--USEFUL META TAGS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale= 1.0" maximum-scale="5" user-scalable="yes">
+    <meta name="author" content="Daniel Uzuigwe">
+    <meta name="keywords" content="animation, HTML, CSS, github, github pages, fancy, design, web development, javascript">
+    <meta name="description" content="MAYRA - for informations and news all around the world, we got you covered">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="MAYRA- the information base">
+    <meta property="og:type" content="webstie">
+    <meta property="og:url" content="https://dankells.github.io/code/">
+    <meta property="og:image" content="https://dankells.github.io/code/images/desert.jpg">
+    <meta property="og:description" content="MAYRA- for your informations and news all around the world."> 
+    
+    <!--PAGE TITLE-->
+    <title>MAYRA -the information base</title>
+
+    <!--USEFUL LINKS-->
+    <link rel="stylesheet" href="/style.css" hreflang="en">
+    <link rel="Shortcut icon" href="/images/instagram.png" type="image/png">
+
+    <!--WEB APP STARTS-->
+    <!--ANDROID CHROME-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="black">
+
+    <!--SAFARI FOR IOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--WEB APP ENDS-->
+
+
+    <!--PRELOAD SEQUENCE-->
+    <link rel="preload" href="index.css" as="style">
+    <link rel="preload" href="index.js" as="script">
+
+
+    <!--PREFETCH SEQUENCE-->
+    <link rel="prefetch" href="menu.html">
+    <link rel="prefetch" href="classic.html">
+
+</head>
+<body onscroll="myScroll()">
+    <div class="container" id="myContainer">
+        <div class="hero" id="myHero">
+
+            <nav id="myNav">
+                <ul id="mySidenav" class="nav-box">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="classic.html">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Products</a></li>
+                </ul>
+
+                <ul class="second-nav-box">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="classic.html">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Products</a></li>
+                </ul>
+
+                <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+
+
+            
+
+
+                <img src="images/cart.png" alt="" class="cart-icon">
+                <p class="menu-icon" id="opener" onclick="openBtn()">&#9776;</p>
+                <a href="javascript:void(0)" onclick="closeBtn()" id="closer">&times;</a>
+
+                <img src="https://dankells.github.io/carmia/images/logo.png" alt="a logo image" class="logo">
+            </nav>
+
+
+            <div class="main-text">
+                <p class="first-child-text">I'M</p>
+                <h1>MAYRA</h1>
+                <h3>THE INFORMATIONAL SYSTEM BASE</h3>
+                <button>Explore</button>
+                <button onclick="page()">View Products</button>
+            </div>
+
+            <footer>
+                <a href="https://www.facebook.com/profile.php?id=100073304644952"><img src="images/facebook.png" alt=""></a>
+                <a href="https://instagram.com/daniekelson?igshid=ZDdkNTZiNTM="><img src="images/instagram.png" alt=""></a>
+                <a href="https://twitter.com/Daniekelson?t=1XWnJ7LiiT6zZIC8mjNgUQ&s=09"><img src="images/twitter_1.png" alt=""></a>
+            </footer>
+            <div class="overlay" id="overLay"></div>
+            <div class="thanks-page" id="thankPage">
+                <h2>Thank You</h2>
+                <p>Your information has been successfully submitted.</p>
+                <button onclick="closePage()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js" defer></script>
+
+</body>
+</html>
